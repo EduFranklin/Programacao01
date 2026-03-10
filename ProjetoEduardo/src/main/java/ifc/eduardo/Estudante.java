@@ -11,7 +11,7 @@ import java.util.Date;
  * @author Eduardo
  */
 public class Estudante {
-    private String nome;
+    private static String nome;
     private Date dataNascimento;
     private String cpf;
     private char genero;
