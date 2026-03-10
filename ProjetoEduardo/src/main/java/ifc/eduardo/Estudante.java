@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.eduardo;
+package ifc.eduardo;
 
 import java.util.Date;
 
@@ -22,9 +22,8 @@ public class Estudante {
         nome = "Nobody";
     }
 
-    public int obterIdade(Date hoje){
+    private int obterIdade(Date hoje){
         int idade = 0;
-        genero = 'M';
         //Logica de calculo de idade
         return idade;
     }
