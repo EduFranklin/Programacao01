@@ -11,5 +11,19 @@ import ifc.eduardo.Estudante;
  * @author aluno
  */
 public class teste1 {
-    Estudante eduardo = new Estudante();
+    
+    
+    public static void main(String[] args) {
+        Estudante eduardo = new Estudante();
+        Estudante gabriel = new Estudante();
+        Estudante pedrinho = new Estudante();
+        
+        eduardo.setNome("Eduardo");
+        gabriel.setNome("Gabriel");
+        pedrinho.setNome("Pedro");
+        
+        System.out.println(eduardo.getNome());
+        System.out.println(gabriel.getNome());
+        System.out.println(pedrinho.getNome());
+    }
 }
