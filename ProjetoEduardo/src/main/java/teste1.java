@@ -11,5 +11,5 @@ import ifc.eduardo.Estudante;
  * @author aluno
  */
 public class teste1 {
-    Estudante estudante = new Estudante();
+    Estudante eduardo = new Estudante();
 }
