@@ -11,12 +11,17 @@ import java.util.Date;
  * @author Eduardo
  */
 public class Estudante {
-    private static String nome;
+    private String nome;
     private Date dataNascimento;
     private String cpf;
     private char genero;
-    private String matricula;
     private String email;
+    private int telefone;
+    private int anosDeIngresso;
+    private int semestreDeIngresso;
+    private String situacaoAcademica;
+    private String digito;
+    private String nivelEnsino;
 
     public Estudante(){
         nome = "Nobody";
@@ -59,18 +64,66 @@ public class Estudante {
     }
     
     
-    public String getMatricula(){
-        return matricula;
-    }
-    public void setMatricula(String _matricula){
-        matricula = _matricula;
-    }
-    
-    
     public String getEmail(){
         return email;
     }
     public void setEmail(String _email){
         email = _email;
+    }
+    
+    
+    public int getTelefone(){
+        return telefone;
+    }
+    public void settelefone(int _telefone){
+        telefone = _telefone;
+    }
+    
+    
+    public int getAnosDeIngresso(){
+        return anosDeIngresso;
+    }
+    public void setAnosDeIngresso(int _anosDeIngresso){
+        anosDeIngresso = _anosDeIngresso;
+    }
+    
+    
+    public int getsemestreDeIngresso(){
+        return semestreDeIngresso;
+    }
+    public void setsemestreDeIngresso(int _semestreDeIngresso){
+        semestreDeIngresso = _semestreDeIngresso;
+    }
+    
+    
+    public String getsituacaoAcademica(){
+        return situacaoAcademica;
+    }
+    public void setsituacaoAcademica(String _situacaoAcademica){
+        situacaoAcademica = _situacaoAcademica;
+    }
+    
+    
+    public String getnivelEnsino(){
+        return situacaoAcademica;
+    }
+    public void setnivelEnsino(String _nivelEnsino){
+        nivelEnsino = _nivelEnsino;
+    }
+    
+    
+    public String getdigito(){
+        return situacaoAcademica;
+    }
+    public void setdigito(String _digito){
+        digito = _digito;
+    }
+    
+    
+    public String getmatricula(){
+        return String.valueOf(anosDeIngresso)+String.valueOf(semestreDeIngresso)+digito;
+    }
+    public void setmatricula(String _digito){
+        digito = _digito;
     }
 }
